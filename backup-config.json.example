@@ -1,0 +1,35 @@
+{
+  "Jobs": [
+    {
+      "Name": "DocumentsBackup",
+      "Source": "C:\\Users\\Ali\\Documents",
+      "Destination": "\\\\192.168.3.106\\Backups\\WindowsPC\\Documents",
+      "Mirror": false,
+      "CopySubfolders": true,
+      "RetryCount": 3,
+      "RetryWaitSeconds": 10,
+      "Threads": 8,
+      "ExcludeDirs": [
+        "C:\\Users\\Ali\\Documents\\Temp"
+      ],
+      "ExcludeFiles": [
+        "*.tmp",
+        "*.bak"
+      ]
+    },
+    {
+      "Name": "PicturesBackup",
+      "Source": "D:\\Photos",
+      "Destination": "\\\\192.168.3.106\\Backups\\WindowsPC\\Photos",
+      "Mirror": false,
+      "CopySubfolders": true,
+      "RetryCount": 3,
+      "RetryWaitSeconds": 10,
+      "Threads": 8,
+      "ExcludeDirs": [],
+      "ExcludeFiles": [
+        "Thumbs.db"
+      ]
+    }
+  ]
+}
